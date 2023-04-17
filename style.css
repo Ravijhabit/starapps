@@ -1,0 +1,35 @@
+/* body{
+
+} */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer,.contentContainer{
+    width:50%;
+}
+.imageContainer>img{
+    max-width:500px;
+}
+.contentContainer{
+    width:50%;
+}
+#logo{
+    background:red;
+    display: flex;
+    padding:20px;
+    width:100%;
+    justify-content: flex-start;
+    gap:80px;
+    font-size:18px;
+    color:white;
+    cursor: pointer;
+}
+#logo>input{
+    display: none;
+}
+#logo>svg{
+    fill:white;
+    stroke-width: 42px;
+}
