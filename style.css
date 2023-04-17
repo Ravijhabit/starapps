@@ -1,13 +1,10 @@
-/* body{
-
-} */
 header{
     text-align: center;
 }
 main{
     height:80vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .imageContainer,.infoContainer{
@@ -53,4 +50,25 @@ main{
 }
 .infoContainer>h1{
     font-size:40px;
+}
+.loader>svg{
+    width:100px;
+    height:100px;
+    animation: rotatee 1s infinite linear;
+}
+.loader{
+    display: none;
+    justify-content: center;
+}
+.companyName{
+    position: relative;
+    width:150px;
+    height:40px;
+    top:-70px;
+    left:180px;
+}
+@keyframes rotatee {
+    100%{
+        transform:rotate(360deg);
+    }
 }
