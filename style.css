@@ -1,30 +1,42 @@
 /* body{
 
 } */
+header{
+    text-align: center;
+}
 main{
+    height:80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.imageContainer,.contentContainer{
-    width:50%;
+.imageContainer,.infoContainer{
+    width:40%;
 }
 .imageContainer>img{
     max-width:500px;
 }
-.contentContainer{
-    width:50%;
+.colorPalette{
+    display: flex;
+    gap:10px;
+    padding:20px 0;
+}
+.isActive{
+    border:2px solid red;
+}
+.isNonActive{
+    border:0;
 }
 #logo{
-    background:red;
     display: flex;
-    padding:20px;
-    width:100%;
+    padding:20px 20px;
+    width:50%;
     justify-content: flex-start;
     gap:80px;
     font-size:18px;
     color:white;
     cursor: pointer;
+    margin-top:30px;
 }
 #logo>input{
     display: none;
@@ -32,4 +44,13 @@ main{
 #logo>svg{
     fill:white;
     stroke-width: 42px;
+}
+.infoContainer>h3,.infoContainer>p{
+    margin:4px 4px 8px;
+}
+.infoContainer>p{
+    color:rgb(87, 87, 87);
+}
+.infoContainer>h1{
+    font-size:40px;
 }
